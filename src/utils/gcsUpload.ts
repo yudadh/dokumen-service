@@ -8,6 +8,11 @@ const storage = new Storage({
   projectId: env.PROJECT_ID,
 });
 
+// const storage = new Storage({
+//   keyFilename: path.join(__dirname, '../../gcs-key.json'), // Path ke kunci JSON service account
+//   projectId: env.PROJECT_ID,
+// });
+
 const bucketName = env.BUCKET_NAME;
 const bucket = storage.bucket(bucketName);
 

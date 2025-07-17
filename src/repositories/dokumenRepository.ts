@@ -293,7 +293,8 @@ export class DokumenRepository {
             pendaftaran_id: pendaftaranId
          },
          data: {
-            status: status
+            status: status,
+            updated_at: new Date()
          },
          select: {
             pendaftaran_id: true,
